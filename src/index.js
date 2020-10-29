@@ -1,5 +1,4 @@
 
-
 const express = require('express');
 const app = express();
 
@@ -7,9 +6,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
+
 //rutas
 app.use(require('./rutas/index-rutas'))
-
 //
 
 app.listen(3000);
